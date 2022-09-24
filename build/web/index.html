@@ -53,7 +53,7 @@ and open the template in the editor.
     </body>
      <div class="d-flex justify-content-around">
         <div class="p-3 bd-highlight">
-        <h1>Formulario de Registro de Estudiantes</h1>
+        <h1>Formulario de Registro de Computadoras</h1>
         <a href="NewServlet" > Click aqui </a><br><br>
         <form method="POST" id="form" name="form" action="NewServlet" >
             <div class="form-group">
@@ -82,6 +82,28 @@ and open the template in the editor.
             <button type="submit" class="btn btn-primary">Guardar</button>
             <button type="button" onclick="enviarFormularioOpcion2()" class="btn btn-success">Guardar con JS</button>
              <button type="button" class="btn btn-danger">Cancelar</button>
+              </form>   
+        </div>
+       <div class="p-3 bd-highlight">
+            <div class="container" id="container2">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <td>Codigo de Computadora</td>
+                            <td>Marca de Computadora</td>
+                            <td>Modelo de Computadora</td>
+                            <td>Dimencion de Pantalla</td>
+                            <td>Año de Fabricacion</td>
+                            <td>Acción</td>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyTable">
+
+                    </tbody>                     
+                </table>
+            </div>
+        </div>
+        </div>
         
     </body>
 </html>
