@@ -42,7 +42,7 @@ public class TiendaController {
    
     
     public String guardarDatos2(Tienda tienda){        
-        String sql = "INSERT INTO universidad.alumno(numero_carne, nombre, correo, direccion, genero_idgenero) ";
+        String sql = "INSERT INTO tienda.alumno(codigo, marca, modelo, pantalla, anio_fabricacion) ";
              sql += " VALUES(?,?,?,?,?)";              
        try{     
             abrirConexion();
@@ -76,7 +76,7 @@ public class TiendaController {
                 respuesta.append("<td >").append(result.getString("marca")).append("</td>");
                 respuesta.append("<td >").append(result.getString("modelo")).append("</td>");
                 respuesta.append("<td >").append(result.getString("pantalla")).append("</td>");
-                respuesta.append("<td id=\"").append(result.getString("año"))
+                respuesta.append("<td id=\"").append(result.getString("anio_fabricacion"))
                         .append("\"  onclick=\"eliminarAlumno(this.id);\">") 
                          //.append("\"  onclick=\"eliminarAlumno("+result.getString("numero_carne")+");\">") 
                         .append(" <a class=\"btn btn-warning\"'><i class=\"fas fa-edit\"></i>  </a>"
